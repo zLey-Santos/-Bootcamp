@@ -1,0 +1,339 @@
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* inicio do estilo header */
+header {
+    text-align: center;
+    background-color: #CAECFF;
+}
+
+.banner {
+    width: 100%;
+    height: 320px;
+    background-image: url('');
+    background-size: contain;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 10px 9px 11px -4px rgba(0, 0, 0, 0.49);
+}
+
+/* easter egg */
+.gift {
+    position: relative;
+}
+
+.icon-gift-dog {
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.titulo-pag {
+    font-size: 3.5rem;
+    margin: 10px 0 0 0;
+    padding: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+.titulo-peq {
+    margin: 10px 0 0px 0px;
+    padding: 0.1em;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.menu li {
+    flex: 0.1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.menu-nav {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 3px;
+    font-weight: bold;
+    background-color: #CAECFF;
+}
+
+.menu-nav:hover {
+    border: 1px solid #CAECFF;
+    color: rgb(59, 59, 59);
+    background-color: #34E3A9;
+}
+
+/* inicio do estilo do conteúdo */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.sobre-nos {
+    background-color: #34e3a9b6;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px #34E3A9;
+    width: 98%;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.sobre-nos h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.animais {
+    background-color: #CAECFF;
+    border-radius: 10px;
+}
+
+.animais h2 {
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0 25px;
+}
+
+.animais h3 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+.animais img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.animais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.animais li, .menu li {
+    flex: 0.1 1 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mostrar-esconder {
+    background-color: #CAECFF;
+    border: 1px solid #000;
+    border-radius: 8px;
+    color: #000000;
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mostrar-esconder:hover {
+    background-color: #34E3A9;
+}
+
+.caracteristicas-animais {
+    line-height: 0;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.caracteristicas-txt {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+.botao-descricao {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    box-sizing: border-box;
+    display: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 10px 9px 7px -3px rgba(0, 0, 0, 0.75);
+    text-align: justify;
+}
+
+.botao-descricao span {
+    color: #2F4F4F;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* estilo footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    text-align: center;
+}
+
+/* media query */
+@media only screen and (max-width: 620px) {
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .gift {
+        display: none;
+    }
+
+    .animais h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 10px 0 25px;
+    }
+
+    .caracteristicas-animais {
+        line-height: 0;
+        font-weight: bold;
+        border: 1px solid #000;
+        border-radius: 10px;
+        height: 250px;
+        width: 285px;
+        font-size: .8em;
+    }
+
+    .icon-gift-dog {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .banner-animais-adocao {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 230px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        border-radius: 10px;
+        background-image: url('');
+        background-position: center;
+        transition: background-image 0.5s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .animais p {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .icon-gift-dog {
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .banner {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        border-radius: 10px;
+        background-image: url('');
+        background-position: center;
+        transition: background-image 0.5s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+
+    .icon-gift-dog {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .rotate {
+        animation: spin 0.2s ease-in-out infinite;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .icon-gift-dog {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 55px;
+        border-radius: 50%;
+    }
+}

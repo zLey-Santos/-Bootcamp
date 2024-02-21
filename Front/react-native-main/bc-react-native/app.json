@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "android": {
+          "config": {
+            "googleMaps": {
+              "apiKey": "AIzaSyByYyhadmXzV4_mAYkvIvAG0Tt8vKrnxPo"
+            }
+          }
+        },
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "icon": "./assets/icon.png",
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "AIzaSyByYyhadmXzV4_mAYkvIvAG0Tt8vKrnxPo"
+      },
+      "supportsTablet": true
+    },
+    "name": "project-notepads-react-native",
+    "orientation": "portrait",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Permita que $(PRODUCT_NAME) use sua localização."
+        }
+      ]
+    ],
+    "slug": "project-notepads-react-native",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+    },
+    "userInterfaceStyle": "light",
+    "version": "1.0.0",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

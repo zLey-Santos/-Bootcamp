@@ -1,0 +1,45 @@
+.drawer {
+    width: 230px;
+    height: calc(100% - 93px);
+    position: fixed;
+    right: -230px;
+    transition: right 1s;
+    top: 60px;
+    background-color: #caecffe0;
+    box-shadow: -9px 10px 27px -7px rgba(0, 0, 0, 0.31);
+    border-radius: 3px;
+    z-index: 90;
+    /* transition: right 0.3s ease; */
+}
+
+.drawer>.menu-drawer {
+    margin: 25px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    border: 5px solid;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: right 1s;
+}
+
+.drawer>.menu-drawer:hover {
+    border: 1px solid #CAECFF;
+    color: rgb(59, 59, 59);
+    background-color: #34E3A9;
+}
+
+@media only screen and (min-width: 620px) {
+    .drawer {
+
+        display: none;
+    }
+
+    .drawer>.menu-drawer {
+        display: none;
+
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Condutas</title>
+        <link rel="stylesheet" href="../css/conduta.css">
+        <link rel="stylesheet" href="../css/app-bar.css">
+        <link rel="stylesheet" href="../css/drawer.css">
+        <link rel="stylesheet" href="../css/slider.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="gift" id="gift">
+                <h1 class="titulo-pag">Conduta de adoção</h1>
+                <img class="icon-gift-dog" id="icon-gift-dog" src="../img-animais/dog.gif" alt="gift de um cachorro ">
+            </div>
+
+            <!-- Inicio do app-bar  -->
+            <div class="app-bar">
+
+                <h1 class="titulo-peq">Conduta </h1>
+                <img class="icon-gift-dog" src="../img-animais/dog.gif" alt="gift de um cachorro ">
+
+                <div class="app-bar-esquerda"></div>
+                <div class="app-bar-direita">
+                    <button id="app-bar-open-drawer" class="app-bar-open-drawer">
+                        <img src="../ícones/burguer-menu.png">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fim app-bar -->
+            <nav class="menu">
+                <ul>
+                    <li><a class="menu-nav" href="../index.html" title="animais para adoção">Animais para adoção </a>
+                    </li>
+                    <li><a class="menu-nav" href="../html/conduta.html" title="conduta de adoção">Conduta de adoção</a>
+                    </li>
+                    <li><a class="menu-nav" href="../html/formulario.html" title="formulário de adoção">Formulário
+                            de adoção</a></li>
+                </ul>
+            </nav>
+
+            <aside id="drawer" class="drawer">
+                <a href="../index.html" class="menu-drawer">Adote</a>
+                <a href="../html/conduta.html" class="menu-drawer">Conduta</a>
+                <a href="../html/formulario.html" class="menu-drawer">Formulário</a>
+            </aside>
+
+        </header>
+
+        <main>s
+            <section class="sobre-nos">
+                <h2><span>&#128054;</span> Sobre nós <span>&#128008;</span></h2>
+                <p>Bem-vindo ao nosso site de doação de animais! Nós somos uma plataforma dedicada a ajudar animais
+                    em situações de risco e encontrar lares amorosos para aqueles que precisam de um lar.</p>
+            </section>
+
+            <section class="conduta">
+                <h2>Conduta de adoção <span> um novo amigo</span> </h2>
+                <p>Ao adotar um animal, é importante ter em mente que ele passará a ser um membro da sua família e que
+                    você será responsável por cuidar dele pelo resto da vida. Aqui estão algumas condutas importantes
+                    para garantir que você dê ao seu novo amigo peludo o melhor lar possível.</p>
+                <ol>
+                    <li><strong>Dedique tempo e atenção:</strong> os animais precisam de atenção e carinho, por isso é
+                        importante dedicar tempo para brincar, passear e interagir com seu novo pet.</li>
+                    <li><strong>Forneça cuidados de saúde adequados:</strong> certifique-se de levar seu animal ao
+                        veterinário regularmente para manter as vacinas e tratamentos atualizados. Mantenha-o limpo e
+                        bem alimentado, com uma dieta saudável e água fresca disponível o tempo todo.</li>
+                    <li><strong>Proporcione um ambiente seguro:</strong> mantenha sua casa segura para o seu novo
+                        animal, removendo objetos perigosos e criando um espaço seguro para ele descansar.</li>
+                    <li><strong>Ensine bons hábitos:</strong> treine seu animal a usar a caixa de areia, a fazer as
+                        necessidades no lugar certo e a se comportar bem em casa e em público.</li>
+                    <li><strong>Seja responsável:</strong> não permita que seu animal vagueie livremente pelas ruas e
+                        nunca o abandone. Se você não puder mais cuidar dele, encontre uma nova casa amorosa para ele.
+                    </li>
+                </ol>
+                <p>Adotar um animal de estimação é uma grande responsabilidade, mas também traz muita alegria e amor
+                    para sua vida. Ao seguir essas condutas, você pode garantir que seu novo amigo peludo tenha uma vida
+                    feliz e saudável ao seu lado.</p>
+
+                <section class="area-comment">
+                    <h3 class="title-comments-area">Deixe aqui o seu comentário! </h3>
+                    <div class="name-area">
+                        <input type="text" id="name" class="name" placeholder="Digite seu nome">
+                    </div>
+                    <div class="message-area">
+                        <textarea id="message" class="message" placeholder="Digite sua Mensagem"></textarea>
+                    </div>
+                    <div class="post-button-area">
+                        <button id="post-button" class="post-button">Postar</button>
+                    </div>
+
+                    <div id="comments" class="comments"></div>
+                </section>
+
+
+            </section>
+        </main>
+
+        <div class="footer-slider" id="footer-slider">
+            <img src="../img-banner/cao2.jpg" alt="cachorro">
+            <img src="../img-banner/gato.jpg" alt="gato">
+            <img src="../img-banner/peixe-dourado.jpg" alt="peixe">
+            <img src="../img-banner/cacatua.jpg" alt="pássaro">
+        </div>
+
+        <footer>
+            <p> © 2023 Adote um animal. Faça o bem!</p>
+        </footer>
+        <script src="../js/index-js/drawer.js"></script>
+        <script src="../js/conduta-js/slider.js"></script>
+        <script src="../js/conduta-js/comment-area.js"></script>
+    </body>
+
+</html>

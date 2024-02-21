@@ -1,0 +1,7 @@
+{
+    "createNotepad": "CreateNotepad",
+    "editNotepad": "EditNotepad",
+    "home": "Home",
+    "listNotepads": "ListNotepads",
+    "viewNotepad": "ViewNotepad"
+}

@@ -1,0 +1,302 @@
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* inicio do estilo header */
+header {
+    text-align: center;
+    background-color: #CAECFF;
+}
+
+.gift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-pag {
+    font-size: 3.5rem;
+    margin: 10px 0 0 0;
+    padding: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+.titulo-peq {
+    margin: 10px 0 0px 0px;
+    padding: 0.1em;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+.icon-gift-dog {
+    width: 65px;
+    height: 55px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.menu li {
+    flex: 0.1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.menu-nav {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 3px;
+    font-weight: bold;
+    background-color: #CAECFF;
+}
+
+.menu-nav:hover {
+    border: 1px solid #CAECFF;
+    color: rgb(59, 59, 59);
+    background-color: #34E3A9;
+}
+
+/* fim do header */
+
+/* inicio do estilo do conteúdo */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.sobre-nos {
+    background-color: #34e3a9b6;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px #34E3A9;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.sobre-nos h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #CAECFF;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dados label,
+.motivo-adocao label {
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.dados input,
+.motivo-adocao textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tel-idade label {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.tel-idade input {
+    width: 100%;
+}
+
+
+.caracteristica label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.caracteristica select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 12px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: #333;
+    font-weight: bold;
+}
+
+.tempo-disponivel label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tempo-disponivel input {
+    margin-right: 5px;
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.botão {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    background-color: #34E3A9;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+}
+
+.botão {
+    border: none;
+}
+
+.botão:hover {
+    background-color: #CAECFF;
+    color: #000000;
+    font-weight: bolder;
+    border: 1px solid;
+}
+
+fieldset {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    text-align: center;
+}
+
+/* alteração via js  */
+.success-message {
+    display: none;
+    margin: 10px;
+    color: #fff;
+    font-size: 28px;
+}
+
+.border-invalid-red {
+    outline: none;
+    border: solid 3px #e74c3c !important;
+}
+
+.invalid {
+    outline: none;
+    border: 2px solid red !important;
+}
+
+
+/* fim js */
+
+@media only screen and (max-width: 620px) {
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .condutaImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gift {
+        display: none;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    legend span {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: none;
+    }
+
+    .success-message {
+        display: none;
+        margin: 10px;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    form {
+        max-width: 75%;
+    }
+
+    form h2 {
+        font-size: 2.8em;
+    }
+}

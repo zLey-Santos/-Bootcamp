@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/formulario.css">
+        <link rel="stylesheet" href="../css/app-bar.css">
+        <link rel="stylesheet" href="../css/drawer.css">
+        <title>Formulário</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="gift">
+                <h1 class="titulo-pag">Formulário de adoção</h1>
+                <img class="icon-gift-dog" src="../img-animais/dog.gif" alt="gift de um cachorro ">
+            </div>
+
+            <!-- Inicio do app-bar  -->
+            <div class="app-bar">
+
+                <h1 class="titulo-peq"> Formulário </h1>
+                <img class="icon-gift-dog" src="../img-animais/dog.gif" alt="gift de um cachorro ">
+
+                <div class="app-bar-esquerda"></div>
+                <div class="app-bar-direita">
+                    <button id="app-bar-open-drawer" class="app-bar-open-drawer">
+                        <img src="../ícones/burguer-menu.png">
+                    </button>
+                </div>
+            </div>
+            <!-- Fim app-bar -->
+            <nav class="menu">
+                <ul>
+                    <li><a class="menu-nav" href="../index.html" title="animais para adoção">Animais para adoção </a>
+                    </li>
+                    <li><a class="menu-nav" href="../html/conduta.html" title="conduta de adoção">Conduta de adoção</a>
+                    </li>
+                    <li><a class="menu-nav" href="../html/formulario.html" title="formulário de adoção">Formulário
+                            de adoção</a></li>
+                </ul>
+            </nav>
+            <aside id="drawer" class="drawer">
+                <a href="../index.html" class="menu-drawer">Adote</a>
+                <a href="../html/conduta.html" class="menu-drawer">Conduta</a>
+                <a href="../html/formulario.html" class="menu-drawer">Formulário</a>
+            </aside>
+        </header>
+
+        <main>
+
+            <section class="sobre-nos">
+                <h2><span>&#128054;</span> Sobre nós <span>&#128008;</span></h2>
+                <p>Bem-vindo ao nosso site de doação de animais! Nós somos uma plataforma dedicada a ajudar animais
+                    em situações de risco e encontrar lares amorosos para aqueles que precisam de um lar.</p>
+            </section>
+
+            <form>
+                <h2>Formulário de adoção de animais</h2>
+
+                <fieldset class="dados">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo:">
+                    <!--  minlength="4" maxlength="16" -->
+                    <label for="endereco"></label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço completo:">
+
+                    <fieldset class="tel-idade">
+                        <label for="telefone"></label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone:">
+
+                        <label for="idade"></label>
+                        <input type="number" id="idade" name="idade" placeholder="Idade:">
+                    </fieldset>
+
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="E-mail:">
+                </fieldset>
+
+                <fieldset class="motivo-adocao">
+                    <label for="motivo_adocao"></label>
+                    <textarea id="motivo_docao" name="motivo_adocao" minlength="16" maxlength="350"
+                        placeholder="Motivo da adoção:"></textarea>
+                </fieldset>
+
+                <fieldset class="caracteristica">
+                    <label>Escolha as características do animal que você procura:</label>
+                    <select id="tipo_animal" name="tipo_animal" required>
+                        <option value=""> Selecione o tipo de animal </option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="outro">Pássaro</option>
+                        <option value="outro">Peixe</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="tempo-disponivel">
+                    <legend>Tempo disponível <span>para se dedicar ao seu novo amigo por dia</span>:</legend>
+                    <label>
+                        <input type="radio" name="tempo" value="1h a 2h" required>
+                        De 1 hora há 2 Horas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tempo" value="2h a 3h" required>
+                        De 2 horas há 3 horas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tempo" value="3h ou mais" required>
+                        3 horas ou mais.
+                    </label>
+                </fieldset>
+
+                <fieldset class="copia-email">
+                    <label for="form-copia">Quero receber uma copia do formulário por email</label>
+                    <input type="checkbox" id="form-copia" name="form-copia" class="reset-checkbox-radio" checked>
+                </fieldset>
+
+
+                <button type="submit" class="botão">Enviar</button>
+
+            </form>
+        </main>
+        <div class="success-message"></div>
+        <footer>
+            <p> © 2023 Adote um animal. Faça o bem!</p>
+        </footer>
+
+        <script src="../js/index-js/drawer.js"></script>
+        <script src="../js/formulario-js/formulario.js"></script>
+    </body>
+
+</html>
